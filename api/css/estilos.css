@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Crete+Round');
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Handlee|Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Handlee|Boogaloo|Anton|Hind');
 
 body,
 html {
@@ -44,20 +44,49 @@ header.masthead {
 }
 section {
   padding: 10rem 0; }
-.bg-primary {
+.bg-primary{
 background-color: Brown !important;
 background-size:98%;
+color: SeaShell;
+
 }
 .bg-primary p{
-  font-family: 'Boogaloo', serif;
-  font-size: 150%;
+  font-family: 'Handlee', serif;
+  font-size: 200%;
+
 }
+
+#Contacto{
+  background-image: url("../img/cont.jpg");
+  background-position: center center;
+  background-size: 170%;
+  font-size: 155%;
+  color: SeaShell;
+  font-family: 'Hind',sans-serif;
+  font-weight: bold;
+  weight:100%;
+
+
+}
+
+
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: firebrick !important; }
 .bg-primary h2{
     font-family: 'Cinzel', serif;
     font-weight: bold;
-  color: SeaShell;
+  color: lightsalmon;
   font-size: 300%;
 }
 .btn-xl {
   padding: 1rem 1rem;
+  background-color: darksalmon;
+  border: none;
+
 }
+.text-primary {
+  color: lightsalmon !important;
+ }

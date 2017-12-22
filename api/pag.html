@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/font-awesome.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
@@ -61,21 +62,21 @@
       <div class="row">
         <div class="col-lg-4 col-md-5 text-center">
           <div class="service-box mt-5 mx-auto">
-            <i class="icon-money"></i>
+            <i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
             <h3 class="mb-3">Inovadores</h3>
             <p class="text-muted mb-0">¡Estamos inovando dia con dia!</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-5 text-center">
           <div class="service-box mt-5 mx-auto">
-            <i class="icon-lightbulb"></i>
+              <i class="fa fa-4x fa-money text-primary mb-3 sr-icons"></i>
             <h3 class="mb-3">Accesibles</h3>
             <p class="text-muted mb-0">¡Nos adaptamos a ti en todo momento!</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-5 text-center">
           <div class="service-box mt-5 mx-auto">
-            <i class="icon-clock"></i>
+            <i class="fa fa-4x fa-star text-primary mb-3 sr-icons"></i>
             <h3 class="mb-3">Excelencia</h3>
             <p class="text-muted mb-0">Contamos con los mejores diseñadores</p>
           </div>
@@ -100,23 +101,38 @@
 
   <!--Seccion a la que nos llevara si hacemos click a Contactanos-->
   <section id="Contacto">
+
+
+
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
+        <div class="col-lg-10 mx-auto text-center">
           <h2 class="section-heading">Ponte en contacto!</h2>
           <hr class="my-4">
           <p class="mb-5">¿Quieres contactarnos o cotizar algun proyecto?:</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 ml-auto text-center">
+        <div class="col-lg-4 ml-auto ">
 
-          <p>Telefono:56687124</p>
-          <p>Correo: empresa@gmail.com</p>
-          <p>Dirección:---------------</p>
+          <p><i class="fa fa-phone"></i>Telefono:56687124</p>
+          <p><i class="fa fa-envelope"></i>Correo: empresa@gmail.com</p>
+          <p><i class="fa fa-arrows"></i>Dirección:---------------</p>
         </div>
-        <div class="col-lg-4 mr-auto text-center">
+        <div class="col-lg-4 mr-auto ">
           <p>¡Cotiza tú proyecto!</p>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="nombre" class="form-control" id="nombre" placeholder="Enter name">
+            <label for="nombre">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <label for="nombre">Tema del proyecto</label>
+            <input type="tema" class="form-control" id="tema" placeholder="Enter subject">
+            <div class="text-center">
+            <button class="btn btn-primary">Enviar</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
