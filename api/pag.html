@@ -5,6 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/contacto.js"></script>
     <link rel="stylesheet" href="css/font-awesome.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -121,7 +123,7 @@
         </div>
         <div class="col-lg-4 mr-auto ">
           <p>¡Cotiza tú proyecto!</p>
-          <div class="form-group">
+          <div class="form-group" id="form_contacto">
             <label for="nombre">Nombre</label>
             <input type="nombre" class="form-control" id="nombre" placeholder="Enter name">
             <label for="nombre">Email</label>
@@ -129,7 +131,7 @@
             <label for="nombre">Tema del proyecto</label>
             <input type="tema" class="form-control" id="tema" placeholder="Enter subject">
             <div class="text-center">
-            <button class="btn btn-primary">Enviar</button>
+            <button class="btn btn-primary" id="send_contacta">Enviar</button>
             </div>
 
           </div>
