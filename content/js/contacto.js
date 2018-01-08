@@ -41,8 +41,32 @@ $(document).ready(function(){
 		}
 
 		if(valid_name&&valid_email&&valid_tema){
-			$("#form_contacto").submit();
+			return saveCotizacion(nombre, email, tema);
 		}
-
 	});
+
+
+  //content es el tema del proyecto a cotizar
+  //  ------  funciones auxiliares  ------
+  function saveCotizacion(cotName, cotEmail, cotContent){
+    $.ajax({
+        url: "content/phpfx/saveCotizacion.php",
+        type: 'POST',
+        data: { //datos a enviar
+          name: cotName,
+          email: cotEmail,
+          content: cotContent,
+        },
+        success: function (data, status, xhr) {
+          alert(data);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+           console.log(xhr.catch);
+           console.log("-----------");
+           console.log(ajaxOptions);
+           console.log("-----------");
+           console.log(thrownError);
+        },
+    });
+  }
 });

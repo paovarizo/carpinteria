@@ -69,7 +69,9 @@ color: SeaShell;
 
 }
 
-
+#send_contacta {
+  margin-top: 1em;
+}
 
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {

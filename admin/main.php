@@ -5,8 +5,7 @@
       if(!$_POST){
         echo "<script>window.location.replace('http://localhost/carpinteria/admin/index.php');</script>";
       }
-      include("phpfx/showErrors.php");
-      include("phpfx/connection.php");
+      include("../config/connection.php");
       $sql 	= 'SELECT * FROM admin where name="'.$_POST["Euser"].'" and password="'.$_POST["Epassw"].'"';
       $query 	= mysqli_query($conn, $sql);
       if(mysqli_num_rows($query) == 0){
